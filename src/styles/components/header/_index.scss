@@ -1,0 +1,100 @@
+@import "./MobileNav.scss";
+
+.header-section {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: $color-zircon;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+
+  .logo-wrapper {
+    width: 180px;
+    height: 32px;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .nav-links {
+    display: none;
+    justify-content: space-between;
+    gap: 50px;
+
+    @include media-min($breakpoint-992) {
+      display: flex;
+    }
+  }
+
+  .btns {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    @include media-min($breakpoint-768) {
+      gap: 30px;
+    }
+
+    .btn-primary {
+      @include media-max($breakpoint-768) {
+        width: 46px;
+        height: 46px;
+        border-radius: 50%;
+
+        span {
+          display: none;
+        }
+      }
+    }
+
+    .hamburger {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      cursor: pointer;
+      position: relative;
+      z-index: 3;
+
+      @include media-min($breakpoint-992) {
+        display: none;
+      }
+
+      .line {
+        width: 100%;
+        border: 1.5px solid $color-observatory;
+        border-radius: 2px;
+      }
+
+      .line1 {
+        transform-origin: 0 0;
+        transition: transform 0.1s ease-in-out;
+      }
+
+      .line3 {
+        transform-origin: 0 100%;
+        transition: transform 0.1s ease-in-out;
+      }
+
+      &.active {
+        order: 2;
+        .line1 {
+          transform: rotate(45deg);
+        }
+
+        .line2 {
+          opacity: 0;
+        }
+
+        .line3 {
+          transform: rotate(-45deg);
+        }
+      }
+    }
+  }
+}

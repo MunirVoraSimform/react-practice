@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:focus {
+  outline-color: $color-observatory;
+}
+
+body {
+  background-color: $color-zircon;
+  font-family: $font-family-mulish;
+  font-size: $font-size-body-16;
+  line-height: 24px;
+  color: $color-mine-shaft;
+
+  // &.mobile-nav-toggle {
+  //   overflow: hidden;
+  //   position: relative;
+
+    
+
+  //   .back-to-top {
+  //     z-index: 0;
+  //   }
+  // }
+
+  .back-to-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border: 1px solid $color-white;
+    background-color: $color-observatory;
+    border-radius: 50%;
+    color: $color-white;
+    font-size: $font-size-body-21;
+    z-index: 1;
+    cursor: pointer;
+
+    &:hover {
+      color: $color-observatory;
+      background-color: $color-white;
+      border-color: $color-observatory;
+    }
+
+    &.active {
+      display: block;
+    }
+  }
+}

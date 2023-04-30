@@ -1,0 +1,29 @@
+@mixin media-min($breakpoint) {
+  @media (min-width: $breakpoint) {
+    @content;
+  }
+}
+
+@mixin media-max($breakpoint) {
+  @media (max-width: $breakpoint) {
+    @content;
+  }
+}
+
+@mixin media-s() {
+  @media (min-width: $breakpoint-578) and (max-width: $breakpoint-768) {
+    @content;
+  }
+}
+
+@mixin media-m() {
+  @media (min-width: $breakpoint-768) and (max-width: $breakpoint-992) {
+    @content;
+  }
+}
+
+@mixin media-l() {
+  @media (min-width: $breakpoint-992) and (max-width: $breakpoint-1200) {
+    @content;
+  }
+}
