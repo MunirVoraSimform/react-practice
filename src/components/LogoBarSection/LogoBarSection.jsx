@@ -8,37 +8,37 @@ import HubspotLogo from "../../assets/images/hubspot-logo.png";
 const LogoBarSection = () => {
   return (
     <>
-    <section class="logoBar-section">
-        <div class="container">
-            <div class="logoBar-border">
-                <div class="row justify-content-between align-item-center">
-                    <div class="col-4 col-md-2">
-                        <div class="logo-frame" data-aos="flip-down" data-aos-duration="1000">
+    <section className="logoBar-section">
+        <div className="container">
+            <div className="logoBar-border">
+                <div className="row justify-content-between align-item-center">
+                    <div className="col-4 col-md-2">
+                        <div className="logo-frame" data-aos="flip-down" data-aos-duration="1000">
                             <img src={AirbnbLogo} alt="airbnb logo" />
                         </div>
                     </div>
-                    <div class="col-4 col-md-2">
-                        <div class="logo-frame" data-aos="flip-down" data-aos-duration="1000">
+                    <div className="col-4 col-md-2">
+                        <div className="logo-frame" data-aos="flip-down" data-aos-duration="1000">
                             <img src={GoogleLogo} alt="google logo" />
                         </div>
                     </div>
-                    <div class="col-4 col-md-2">
-                        <div class="logo-frame" data-aos="flip-down" data-aos-duration="1000">
+                    <div className="col-4 col-md-2">
+                        <div className="logo-frame" data-aos="flip-down" data-aos-duration="1000">
                             <img src={AmazonLogo} alt="amazon logo" />
                         </div>
                     </div>
-                    <div class="col-4 col-md-2">
-                        <div class="logo-frame" data-aos="flip-down" data-aos-duration="1000">
+                    <div className="col-4 col-md-2">
+                        <div className="logo-frame" data-aos="flip-down" data-aos-duration="1000">
                             <img src={MicrosoftLogo} alt="microsoft logo" />
                         </div>
                     </div>
-                    <div class="col-4 col-md-2">
-                        <div class="logo-frame" data-aos="flip-down" data-aos-duration="1000">
+                    <div className="col-4 col-md-2">
+                        <div className="logo-frame" data-aos="flip-down" data-aos-duration="1000">
                             <img src={FedexLogo} alt="fedex logo" />
                         </div>
                     </div>
-                    <div class="col-4 col-md-2">
-                        <div class="logo-frame" data-aos="flip-down" data-aos-duration="1000">
+                    <div className="col-4 col-md-2">
+                        <div className="logo-frame" data-aos="flip-down" data-aos-duration="1000">
                             <img src={HubspotLogo} alt="hubspot logo" />
                         </div>
                     </div>

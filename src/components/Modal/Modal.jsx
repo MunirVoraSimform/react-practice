@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import ArrowWhite from "../../assets/images/arrowRightWhite.svg";
+import Button from "../Button/Button";
 const Modal = (props) => {
 
   const modalRef = useRef(null);
@@ -32,17 +32,8 @@ const Modal = (props) => {
             succeed, whether you're a beginner or an experienced user.
           </p>
           <div className="btns">
-            <a
-              href="#!"
-              onClick={ ()=> {props.setOpenModal(false)} }
-              className="btn btn-secondary-color close-btn"
-            >
-              Close
-            </a>
-            <a href="#!" className="btn btn-primary">
-              <span>Sign Up</span>
-              <img src={ArrowWhite} alt="" />
-            </a>
+            <Button btnTitle="Close" btnType="secondary-color" onClick={ ()=> {props.setOpenModal(false)} }/>
+            <Button btnTitle="Sign Up" btnType="primary" imgName="arrowRightWhite.svg" imgPosition="right" />
           </div>
         </div>
       </div>

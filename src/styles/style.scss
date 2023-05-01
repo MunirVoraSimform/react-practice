@@ -1,6 +1,8 @@
 @import "mixins";
 @import "global";
+@import "../styles/components/Button/Button.scss";
 @import "components/modal/Modal.scss";
 @import "components/header";
 @import "components/heroSection/";
 @import "components/logoBarSection/";
+@import "components/backToTop/BackToTop.scss";

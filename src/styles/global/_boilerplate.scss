@@ -17,41 +17,4 @@ body {
   font-size: $font-size-body-16;
   line-height: 24px;
   color: $color-mine-shaft;
-
-  // &.mobile-nav-toggle {
-  //   overflow: hidden;
-  //   position: relative;
-
-    
-
-  //   .back-to-top {
-  //     z-index: 0;
-  //   }
-  // }
-
-  .back-to-top {
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 50px;
-    height: 50px;
-    border: 1px solid $color-white;
-    background-color: $color-observatory;
-    border-radius: 50%;
-    color: $color-white;
-    font-size: $font-size-body-21;
-    z-index: 1;
-    cursor: pointer;
-
-    &:hover {
-      color: $color-observatory;
-      background-color: $color-white;
-      border-color: $color-observatory;
-    }
-
-    &.active {
-      display: block;
-    }
-  }
 }

@@ -1,4 +1,5 @@
 import HeroImage from "../../assets/images/hero-image.png";
+import Button from "../Button/Button";
 
 const HeroSection = () => {
   return (
@@ -17,13 +18,11 @@ const HeroSection = () => {
                     <h1>Create Engaging Landing Pages</h1>
                     <p>
                       Build beautiful landing pages in record time with{" "}
-                      <a href="#">Anima's</a> Landing Page UI kit for Figma. No
+                      <a href="#!">Anima's</a> Landing Page UI kit for Figma. No
                       code required!
                     </p>
                   </div>
-                  <a href="#" className="btn btn-primary">
-                    <span>How it works</span>
-                  </a>
+                  <Button btnTitle="How it works" btnType="primary" />
                 </div>
                 <div
                   className="hero-img"
