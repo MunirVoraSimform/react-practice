@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import logo from "../../assets/images/logo.png";
 import rocket from "../../assets/images/rocket-icon.svg";
-const Header = (props) => {
 
+const Header = (props) => {
   const [mobileNav, setMobileNav] = useState(false);
   const links = document.querySelectorAll("nav a");
 
@@ -15,10 +15,10 @@ const Header = (props) => {
   useEffect(() => {
     window.addEventListener("resize", () => {
       if(window.innerWidth > 992){
-        setMobileNav(false)
+        setMobileNav(false);
       }
     })
-  },[])
+  },[]);
   
   return (
     <>
